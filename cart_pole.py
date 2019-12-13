@@ -7,8 +7,8 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 
-number_of_games = 1000
-number_of_steps = 1000
+number_of_games = 100
+number_of_steps = 100
 score_requirement = 60
 
 
@@ -81,7 +81,7 @@ def play(env, model):
                 action = random.randint(0, 1)
             else:
                 action = np.argmax(model.predict(prev_obs.reshape(-1, len(prev_obs)))[0])
-
+            env.render()
             choices.append(action)
 
             new_obs, reward, done, info = env.step(action)
@@ -102,6 +102,7 @@ def main():
     env.reset()
 
     training_data = model_data_preparation(env)
+    print(training_data)
     model = train_model(training_data)
     play(env, model)
 

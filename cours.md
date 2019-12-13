@@ -81,6 +81,32 @@ On prend l'action avec la meilleur reward (plus grande QValue), pas nécessairem
 
 ![qlearning](https://media.discordapp.net/attachments/644672581319786500/649003129731284993/unknown.png?width=400&height=32)
 
+## Deep learning avec le renforcement
+
+### Cerveau humain
+
+100 milliard de neurones
+Les réseaux de neurones sont une classe de modeles qui sont construits a l'aide de couche de neurones.
+Deux principaux réseaux de neurones: convolutionnels et récurrents.
+
+#### Neurones formel
+- Les synapse sont représentés par des poids
+- Corps cellulaire: fonction de transfert
+- Axone: elements de sortie
+
+
+### Fonction d'activation
+Miner le fonctionnement d'un potentiel d'action d'un neurone. Il existe de neubreuses fonctions d'activation différentes.
+
+
+### Features
+
+#### Vision
+Analyse d'image est la principal utilité de RN. Deux algo: classification de l'image puis localisation
+
+#### Teste
+Analyse d'entité et des relations dans un texte.
+
 # Notes
 
 [Livre](http://incompleteideas.net/book/bookdraft2017nov5.pdf)
